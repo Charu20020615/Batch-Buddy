@@ -1,9 +1,10 @@
-# 🎯 SkillSphere - Share. Learn. Level Up.
+# 📘 BatchBuddy – Smart Timetable & Scheduling System for University Students
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Build](https://img.shields.io/badge/build-passing-brightgreen.svg)]()
+[![Status](https://img.shields.io/badge/status-in%20development-yellow)]()
+[![Built with Students](https://img.shields.io/badge/built%20by-SLIIT%20Undergraduates-blueviolet)]()
 
-> A dynamic skill-sharing and learning platform that empowers users to grow through collaboration, gamified learning, and community engagement.
+> BatchBuddy is a personalized academic assistant that helps university students manage their schedules, track attendance, and improve productivity using smart analytics and voice-powered interactions.
 
 ---
 
@@ -11,56 +12,62 @@
 ## 📌 Table of Contents
 
 - [About](#about)
-- [Features](#features)
+- [Objectives](#objectives)
+- [Core Modules](#core-modules)
+- [System Architecture](#system-architecture)
 - [Tech Stack](#tech-stack)
 - [Getting Started](#getting-started)
   - [Backend Setup](#backend-setup)
   - [Frontend Setup](#frontend-setup)
-- [Team](#team)
-- [License](#license)
 
 ---
-
 
 ## 🧠 About
 
-**Aspira** (SkillSphere) is a full-stack web application that enables users to share skills, build learning paths, interact with others, and engage in gamified skill development.
+Many university students struggle with fragmented scheduling, forgotten events, and poor productivity. BatchBuddy solves this by offering a unified platform to view daily schedules, receive voice-assisted reminders, track attendance, and generate personalized analytics—all tailored for each student.
 
 ---
 
-
-## ✨ Features
-
-### 🔐 Authentication & Profile
-- OAuth Login (Google, GitHub, Facebook)
-- Follower system and user bio management
-
-### 📚 Skills Sharing & Learning
-- Post and categorize content
-- Create structured learning plans
-- Track progress and earn badges
-
-### 💬 Interactivity
-- Comments, likes, reactions
-- Saved posts and real-time notifications
-
-### 🎮 Game Hub
-- Quizzes, memory match games
-- XP system and ranking
-
-### 👥 Community
-- Create/join groups
-- Group discussions and announcements
+## 🎯 Objectives
+- Simplify academic timetable access.
+- Enable students to track attendance and productivity.
+- Support voice commands for accessibility.
+- Deliver real-time notifications and reminders.
+- Provide admins with control over timetable management.
+- Offer smart analytics for informed scheduling.
 
 ---
 
+## 🧩 Core Modules
+
+### 1. 👥 User Management System
+- SLIIT-only secure registration/login
+- Personalized dashboard with daily timetable
+- Event details view (type, location, time)
+
+### 2. 📈 Attendance & Productivity Tracker
+- Manual and voice-based attendance marking
+- Visual monthly reports and productivity insights
+
+### 3. 🔔 Notification System with Voice Support
+- Manual & voice-based reminder creation
+- Text-to-speech timetable reading
+- Automated alerts for exams, lectures, tasks
+
+### 4. 🛠️ Admin Management & Smart Analytics
+- Admin dashboard for schedule control
+- PDF timetable upload with data extraction
+- Event addition (reschedules, holidays)
+- Analytics: attendance trends, study suggestions, reports
+
+---
 
 ## 🛠️ Tech Stack
 
-- **Frontend** -	 React.js, HTML/CSS/JS 
-- **Backend**  -   Spring Boot, Java 21 (JDK)
-- **Database** -	 PostgreSQL, pgAdmin
-- **Other Tools**	-	OAuth 2.0, JWT, WebSockets 	        
+**Frontend**	 **Backend**	  **Database**	  **Other Tools**
+React.js	      Node.js	       MongoDB	        Web Speech API 
+HTML/CSS/JS     Express.js	   pgAdmin	        Axios, Cors
+Tailwind CSS
 
 ---
 
@@ -70,23 +77,25 @@
 ### 📂 Backend Setup
 
 **1. Install Prerequisites**
-- Java JDK 21
+- Node.js
 - PostgreSQL (Create a database and update example.env file)
 - Maven
 
 **2. Clone the Repository**
-- [git clone https://github.com/your-username/aspira.git](https://github.com/Pratheesha100/Aspira-Skill-Sharing-and-Learning-Platform-.git)
+ ```bash
+  git clone https://github.com/Pratheesha100/Aspira-Skill-Sharing-and-Learning-Platform-.git
+  ```
   
 **3. Configure the Database**
-- Rename the example.env file to .env file and update these.
-- spring.datasource.url=jdbc:postgresql://localhost:5432/aspira_db
-- spring.datasource.username=your_username
-- spring.datasource.password=your_password
+- MONGO_URI=`mongodb+srv://<username>:<password>@<cluster>/<database>?<options>`
+- PORT=`Any port number`
   
 **4. Run the Backend**
+
 ```bash
 cd backend
-mvn spring-boot:run
+npm install
+npm start
 ```
 
 ---
@@ -94,28 +103,23 @@ mvn spring-boot:run
 ### 🌐 Frontend Setup
 
 **1. Navigate to the Frontend Directory**
+
 ```bash
- cd aspira/frontend
+ cd frontend
 ```
   
 **2.Install Dependencies**
+
 ```bash
  npm install
 ```
   
 **3.Start the React App**
+
 ```bash
  npm start
   
 ```
 
-
----
-
-## 👩‍💻 Team
-
----
-
-## 📄 License
 
 
